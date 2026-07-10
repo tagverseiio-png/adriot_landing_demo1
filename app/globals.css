@@ -753,7 +753,7 @@ section {
 
 /* ---------- CTA ---------- */
 .cta {
-  background: var(--brass);
+  background: #ffffff;
   color: var(--charcoal);
   text-align: center;
 }
