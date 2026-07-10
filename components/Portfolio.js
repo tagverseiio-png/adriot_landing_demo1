@@ -1,4 +1,10 @@
+"use client";
+import { useState } from "react";
+import LeadFormModal from "./LeadFormModal";
+
 export default function Portfolio() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <section className="portfolio" id="projects">
       <div className="wrap">
@@ -68,7 +74,32 @@ export default function Portfolio() {
             </div>
           </div>
         </div>
+
+        {/* CTA Button */}
+        <div style={{ textAlign: "center", marginTop: "48px" }}>
+          <button
+            onClick={() => setIsModalOpen(true)}
+            style={{
+              background: "#ffffff",
+              color: "#000000",
+              border: "none",
+              padding: "16px 48px",
+              fontSize: "13px",
+              fontFamily: "var(--mono)",
+              letterSpacing: "0.12em",
+              textTransform: "uppercase",
+              cursor: "pointer",
+              borderRadius: "2px",
+              transition: "background 0.25s ease",
+            }}
+            onMouseEnter={e => e.target.style.background = "#f0f0f0"}
+            onMouseLeave={e => e.target.style.background = "#ffffff"}
+          >
+            See Full Portfolio
+          </button>
+        </div>
       </div>
+      <LeadFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </section>
   );
 }
