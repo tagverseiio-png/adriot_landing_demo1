@@ -60,7 +60,7 @@ export default function WhyUs() {
                 className="btn solid"
                 onClick={() => setIsModalOpen(true)}
               >
-                Request a Free Site Visit
+                Talk To Our Consultants
               </button>
             </div>
           </div>
