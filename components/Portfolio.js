@@ -35,7 +35,7 @@ export default function Portfolio() {
           </div>
           <div className="proj-card">
             <div className="proj-thumb">
-              <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=800&auto=format&fit=crop" alt="Financial Services Office Interior" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              <img src="/financial-office.jpg" alt="Financial Services Office Interior" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               <span className="tag">Corporate Office</span>
             </div>
             <div className="proj-info">
