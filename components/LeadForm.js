@@ -9,23 +9,19 @@ export default function LeadForm({ onSuccess }) {
 
   return (
     <form className="cta-form" onSubmit={handleSubmit}>
-      <input type="text" placeholder="Full Name" required />
-      <input type="tel" placeholder="Phone Number" required />
-      <input type="email" placeholder="Work Email" className="full" required />
-      <select className="full" required defaultValue="">
-        <option value="" disabled>Project Type</option>
-        <option>Corporate Office Interior</option>
-        <option>Commercial / Retail Interior</option>
-        <option>Turnkey Fit-Out</option>
-        <option>Renovation</option>
-      </select>
-      <textarea placeholder="Tell us about your space — location, area in sq.ft., timeline"></textarea>
+      <input type="text" placeholder="Name" required />
+      <input type="text" placeholder="Company Name" required />
+      <input type="tel" placeholder="Mobile Number" required />
+      <input type="email" placeholder="Official Email" required />
+      <input type="text" placeholder="Project Location" className="full" required />
+      <input type="text" placeholder="Approximate Project Area" className="full" required />
+      <textarea placeholder="Brief Project Requirement"></textarea>
       <button
         type="submit"
         className="btn on-paper full"
         style={{ justifyContent: "center" }}
       >
-        Request a Callback
+        Discuss My Project
       </button>
     </form>
   );

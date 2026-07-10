@@ -5,13 +5,12 @@ export default function Contact() {
   return (
     <section className="cta" id="contact">
       <div className="wrap">
-        <p className="eyebrow" style={{ color: "#3c2f1c" }}>
+        <p className="eyebrow" style={{ color: "#3c2f1c", visibility: "hidden" }}>
           Start a Project
         </p>
-        <h2>Tell us about your space. We&apos;ll send a plan, not a sales pitch.</h2>
+        <h2 style={{ fontSize: "clamp(24px, 3.5vw, 40px)" }}>PLANNING AN UPCOMING CORPORATE OR COMMERCIAL INTERIOR PROJECT?</h2>
         <p className="cta-sub">
-          Share your requirement and our design team will get back within one business day with next
-          steps.
+          Let’s discuss how Adroit can deliver your project.
         </p>
         <LeadForm />
       </div>

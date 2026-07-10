@@ -3,9 +3,8 @@ export default function Portfolio() {
     <section className="portfolio" id="projects">
       <div className="wrap">
         <div className="section-head">
-          <p className="eyebrow">Selected Work</p>
-          <h2>Corporate &amp; commercial interior design projects</h2>
-          <p>A cross-section of turnkey office, retail and showroom interiors delivered by Adroit Design.</p>
+          <p className="eyebrow">PROJECTS THAT DEMONSTRATE OUR CAPABILITIES.</p>
+          <h2 style={{ fontSize: "32px", lineHeight: 1.2 }}>Explore selected projects where Adroit combined design expertise, engineering coordination and professional execution to deliver successful project outcomes.</h2>
         </div>
         <div className="proj-grid">
           <div className="proj-card">

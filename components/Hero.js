@@ -1,47 +1,46 @@
+"use client";
+import { useState } from "react";
 import Link from "next/link";
+import LeadFormModal from "./LeadFormModal";
 
 export default function Hero() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
-    <section className="hero" id="top">
-      <div className="wrap">
-        <div>
-          <p className="eyebrow">Corporate &amp; Commercial Interior Design</p>
-          <h1>
-            From <em>blueprint</em> to<br />
-            built space — <em>one</em> team, start to finish.
-          </h1>
-          <p className="lead">
-            Adroit Design plans, designs and executes corporate offices, commercial spaces and retail
-            interiors as a single turnkey project — no fragmented vendors, no gaps between drawing
-            and delivery.
-          </p>
-          <div className="hero-ctas">
-            <Link href="#contact" className="btn solid">
-              Start Your Project
-            </Link>
-            <Link href="#projects" className="btn">
-              View Our Work
-            </Link>
-          </div>
-          <div className="hero-stats">
-            <div>
-              <span className="num">120+</span>
-              <span className="lbl">Projects Delivered</span>
+    <>
+      <section className="hero" id="top">
+        <div className="wrap">
+          <div>
+            <p className="eyebrow">Corporate &amp; Commercial Interiors</p>
+            <h1>
+              Corporate &amp; Commercial Interiors. Designed to <em>Perform</em>. Delivered with <em>Accountability</em>.
+            </h1>
+            <p className="lead">
+              Integrated Interior Design, Design &amp; Build and Turnkey Project Solutions — from concept development to successful project handover.
+            </p>
+            <div className="hero-ctas">
+              <button className="btn solid" onClick={() => setIsModalOpen(true)}>
+                Discuss Your Project
+              </button>
+              <Link href="#projects" className="btn">
+                View Our Projects
+              </Link>
             </div>
-            <div>
-              <span className="num">9 Lakh+</span>
-              <span className="lbl">Sq. Ft. Executed</span>
-            </div>
-            <div>
-              <span className="num">14 Days</span>
-              <span className="lbl">Avg. Design Turnaround</span>
-            </div>
-            <div>
-              <span className="num">100%</span>
-              <span className="lbl">In-House Execution</span>
+            <div className="hero-stats">
+              <div>
+                <span className="num">20+</span>
+                <span className="lbl">Years of Experience</span>
+              </div>
+              <div>
+                <span className="num">1.2M+</span>
+                <span className="lbl">Sq.Ft. Delivered</span>
+              </div>
+              <div>
+                <span className="num">500+</span>
+                <span className="lbl">Projects</span>
+              </div>
             </div>
           </div>
-        </div>
         <div className="blueprint-box">
           <svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid meet">
             <rect className="bp-line" x="30" y="30" width="340" height="440" />
@@ -57,5 +56,7 @@ export default function Hero() {
         </div>
       </div>
     </section>
+    <LeadFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+    </>
   );
 }

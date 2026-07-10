@@ -4,47 +4,44 @@ export default function WhyUs() {
     <section className="why" id="why">
       <div className="wrap why-grid">
         <div>
-          <p className="eyebrow">Why Businesses Choose Adroit Design</p>
-          <h2 style={{ fontSize: "clamp(26px, 3vw, 36px)", marginBottom: "34px" }}>
-            A design-and-build firm, not a design firm that subcontracts the build.
+          <p className="eyebrow">Why Adroit</p>
+          <h2 style={{ fontSize: "clamp(26px, 3vw, 36px)", marginBottom: "34px", lineHeight: 1.2 }}>
+            BUILT FOR BUSINESSES WHERE QUALITY, COST AND TIMELINES MATTER.
           </h2>
           <div className="why-list">
             <div className="why-item">
               <span className="mark">→</span>
               <div>
-                <h4>Single point of accountability</h4>
+                <h4>Single-Point Accountability</h4>
                 <p>
-                  One contract, one project manager, one team responsible for design and site execution.
+                  One experienced team coordinating your project from concept to successful completion.
                 </p>
               </div>
             </div>
             <div className="why-item">
               <span className="mark">→</span>
               <div>
-                <h4>Fixed timelines, tracked weekly</h4>
+                <h4>Multidisciplinary Expertise</h4>
                 <p>
-                  Every project runs on a published schedule with weekly progress updates, not
-                  open-ended promises.
+                  Integrated Interior Design, Civil, MEP, Procurement and Project Management capabilities.
                 </p>
               </div>
             </div>
             <div className="why-item">
               <span className="mark">→</span>
               <div>
-                <h4>In-house execution teams</h4>
+                <h4>Transparent Project Control</h4>
                 <p>
-                  Civil, electrical and carpentry crews are our own — not third-party subcontractors
-                  we merely coordinate.
+                  Detailed BOQs, cost monitoring, progress tracking and systematic project management.
                 </p>
               </div>
             </div>
             <div className="why-item">
               <span className="mark">→</span>
               <div>
-                <h4>Transparent, itemised costing</h4>
+                <h4>Quality-Focused Execution</h4>
                 <p>
-                  Detailed bill of quantities before work starts, so there are no surprise variations
-                  at handover.
+                  Structured QA/QC procedures throughout project execution and final handover.
                 </p>
               </div>
             </div>

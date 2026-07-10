@@ -10,24 +10,20 @@ export default function FAQ() {
 
   const faqs = [
     {
-      q: "What does a turnkey interior project mean?",
-      a: "A turnkey interior project means Adroit Design handles every stage of your space — design, approvals, civil work, electrical, furniture and finishing — under one contract, so you receive a ready-to-use space without coordinating multiple vendors."
+      q: "Does Adroit provide complete Design & Build services?",
+      a: "Yes. Our services can cover Interior Design, Engineering, MEP, Procurement, Execution, Project Management and final handover."
     },
     {
-      q: "What is the difference between corporate and commercial interior design?",
-      a: "Corporate interior design focuses on offices, headquarters and workspaces built around productivity and brand identity. Commercial interior design covers a wider range of business spaces such as retail stores, showrooms, restaurants and clinics, each with its own functional and customer-facing needs."
+      q: "What types of projects does Adroit undertake?",
+      a: "We specialise in medium to large-scale Corporate and Commercial Interior Projects."
     },
     {
-      q: "How long does a typical office fit-out take?",
-      a: "Most office fit-outs with Adroit Design are completed in 6 to 12 weeks depending on the built-up area, scope of civil work, and approval timelines, with a detailed schedule shared before execution begins."
+      q: "Can Adroit undertake projects across multiple locations?",
+      a: "Yes. We undertake projects across Chennai, Bengaluru and other locations based on project requirements."
     },
     {
-      q: "Does Adroit Design handle both design and construction?",
-      a: "Yes. Adroit Design is a design-and-build firm, which means the same team that designs your space also executes the civil, MEP and finishing work, removing the gap between design intent and site reality."
-    },
-    {
-      q: "Which cities does Adroit Design operate in?",
-      a: "Adroit Design executes corporate and commercial interior projects across Chennai and Tamil Nadu, and takes on select turnkey projects in other Indian cities on request."
+      q: "How does Adroit manage project quality and costs?",
+      a: "Through detailed BOQs, systematic project planning, cost monitoring, QA/QC procedures and professional project management."
     }
   ];
 
@@ -35,8 +31,8 @@ export default function FAQ() {
     <section className="faq" id="faq">
       <div className="wrap">
         <div className="section-head">
-          <p className="eyebrow">Frequently Asked Questions</p>
-          <h2>Turnkey interior design, explained</h2>
+          <p className="eyebrow" style={{ visibility: "hidden" }}>FAQ</p>
+          <h2>FREQUENTLY ASKED QUESTIONS</h2>
         </div>
         <div className="faq-list">
           {faqs.map((faq, idx) => (
