@@ -534,53 +534,169 @@ section {
   background: var(--blueprint);
   color: var(--ink);
   position: relative;
+  overflow: hidden;
+  padding: 120px 0 100px;
 }
 
-.process .eyebrow {
-  color: var(--brass-soft);
+/* Subtle noise/grain overlay */
+.process::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(185, 144, 90, 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(23, 24, 26, 0.25) 0%, transparent 55%);
+  pointer-events: none;
+  z-index: 0;
 }
 
-.process .eyebrow::before {
-  background: var(--brass-soft);
+.process .wrap {
+  position: relative;
+  z-index: 1;
 }
 
-.process .section-head p {
-  color: rgba(244, 242, 237, 0.75);
+/* Header block */
+.process-header {
+  max-width: 700px;
+  margin-bottom: 80px;
 }
 
-.process-steps {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0;
-  border-top: 1px solid rgba(244, 242, 237, 0.25);
-}
-
-.pstep {
-  padding: 34px 26px 0;
-  border-right: 1px solid rgba(244, 242, 237, 0.25);
-}
-
-.pstep:last-child {
-  border-right: none;
-}
-
-.pstep .step-no {
-  font-family: var(--display);
-  font-size: 34px;
+.process-header .eyebrow {
   color: var(--brass-soft);
   margin-bottom: 14px;
 }
 
-.pstep h4 {
-  font-size: 17px;
-  margin-bottom: 10px;
-  font-weight: 500;
+.process-header .eyebrow::before {
+  background: var(--brass-soft);
 }
 
-.pstep p {
-  font-size: 14px;
-  color: rgba(244, 242, 237, 0.75);
+.process-header .section-title {
+  font-size: clamp(36px, 5vw, 56px);
+  font-family: var(--display);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin-bottom: 20px;
 }
+
+.process-subtitle {
+  font-size: 16px;
+  line-height: 1.7;
+  color: rgba(244, 242, 237, 0.65);
+  max-width: 580px;
+}
+
+/* Timeline wrapper */
+.process-timeline {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  position: relative;
+  gap: 0;
+}
+
+/* Horizontal connector line through all dot centres */
+.timeline-line {
+  position: absolute;
+  top: 7px; /* half of 14px dot = centres on dots */
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(185, 144, 90, 0.6) 8%,
+    rgba(185, 144, 90, 0.6) 92%,
+    transparent 100%
+  );
+  z-index: 0;
+}
+
+/* Each step card */
+.pstep {
+  position: relative;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+/* The dot on the timeline */
+.pstep-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--blueprint);
+  border: 2px solid var(--brass-soft);
+  margin-bottom: 28px;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 2;
+}
+
+/* Card inner content */
+.pstep-inner {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(244, 242, 237, 0.12);
+  border-radius: 4px;
+  padding: 28px 22px 32px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Gold accent on top edge */
+.pstep-inner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--brass-soft), transparent);
+  opacity: 1;
+}
+
+/* Step number */
+.pstep .step-no {
+  font-family: var(--display);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--brass-soft);
+  margin-bottom: 16px;
+  letter-spacing: -0.03em;
+}
+
+/* Step title */
+.pstep h4 {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--display);
+  margin-bottom: 8px;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+
+/* Short descriptor */
+.step-desc {
+  font-size: 12px;
+  font-family: var(--mono);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--brass-soft);
+  margin-bottom: 14px;
+  opacity: 0.85;
+}
+
+/* Detail text — always visible */
+.step-detail {
+  font-size: 13.5px;
+  line-height: 1.65;
+  color: rgba(244, 242, 237, 0.55);
+}
+
 
 /* ---------- WHY US ---------- */
 .why {

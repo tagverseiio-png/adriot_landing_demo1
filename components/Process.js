@@ -1,37 +1,64 @@
 export default function Process() {
+  const steps = [
+    {
+      no: "01",
+      title: "Understand",
+      desc: "Project Brief & Site Assessment",
+      detail: "We listen first. Every project begins with a deep-dive into your vision, goals, and site conditions.",
+    },
+    {
+      no: "02",
+      title: "Design",
+      desc: "Design Development & Cost Planning",
+      detail: "Our architects craft detailed designs, balancing aesthetics with budget precision.",
+    },
+    {
+      no: "03",
+      title: "Engineer",
+      desc: "Detailed Engineering & Procurement",
+      detail: "Structural and MEP engineers resolve every technical detail before ground breaks.",
+    },
+    {
+      no: "04",
+      title: "Execute",
+      desc: "Project Execution & Management",
+      detail: "On-site teams led by experienced project managers keep quality and timelines tight.",
+    },
+    {
+      no: "05",
+      title: "Deliver",
+      desc: "Testing, Snag Closure & Handover",
+      detail: "We don't leave until every snag is resolved and you're fully satisfied.",
+    },
+  ];
+
   return (
     <section className="process" id="process">
+
       <div className="wrap">
-        <div className="section-head">
+        <div className="process-header">
           <p className="eyebrow">FROM CONCEPT TO COMPLETION.</p>
           <h2 className="section-title">Our Process</h2>
+          <p className="process-subtitle">
+            A disciplined five-phase methodology — refined across hundreds of projects — ensures every build is delivered with precision, on time, and on budget.
+          </p>
         </div>
-      </div>
-      <div className="process-steps" style={{ gridTemplateColumns: "repeat(5, 1fr)" }}>
-        <div className="pstep">
-          <div className="step-no">01</div>
-          <h4>Understand</h4>
-          <p>Project Brief &amp; Site Assessment</p>
-        </div>
-        <div className="pstep">
-          <div className="step-no">02</div>
-          <h4>Design</h4>
-          <p>Design Development &amp; Cost Planning</p>
-        </div>
-        <div className="pstep">
-          <div className="step-no">03</div>
-          <h4>Engineer</h4>
-          <p>Detailed Engineering &amp; Procurement</p>
-        </div>
-        <div className="pstep">
-          <div className="step-no">04</div>
-          <h4>Execute</h4>
-          <p>Project Execution &amp; Management</p>
-        </div>
-        <div className="pstep">
-          <div className="step-no">05</div>
-          <h4>Deliver</h4>
-          <p>Testing, Snag Closure &amp; Handover</p>
+
+        {/* Timeline connector line */}
+        <div className="process-timeline">
+          <div className="timeline-line"></div>
+
+          {steps.map((step, i) => (
+            <div className="pstep" key={i}>
+              <div className="pstep-dot"></div>
+              <div className="pstep-inner">
+                <div className="step-no">{step.no}</div>
+                <h4>{step.title}</h4>
+                <p className="step-desc">{step.desc}</p>
+                <p className="step-detail">{step.detail}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
