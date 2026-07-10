@@ -55,7 +55,7 @@ export default function WhyUs() {
             </div>
 
             {/* CTA Button */}
-            <div style={{ marginTop: "40px", paddingLeft: "130px" }}>
+            <div className="why-cta-container">
               <button
                 className="btn solid"
                 onClick={() => setIsModalOpen(true)}

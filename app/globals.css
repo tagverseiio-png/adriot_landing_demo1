@@ -756,6 +756,11 @@ section {
   min-height: 420px;
 }
 
+.why-cta-container {
+  margin-top: 40px;
+  padding-left: 130px;
+}
+
 /* ---------- PORTFOLIO ---------- */
 .portfolio {
   background: var(--charcoal-soft);
@@ -1081,6 +1086,16 @@ footer {
   .why-grid {
     grid-template-columns: 1fr;
     gap: 36px;
+  }
+
+  .why-visual {
+    order: -1;
+  }
+
+  .why-cta-container {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
   }
 
   .svc-grid,
