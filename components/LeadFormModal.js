@@ -13,7 +13,7 @@ export default function LeadFormModal({ isOpen, onClose }) {
         <p className="eyebrow" style={{ color: "#3c2f1c", justifyContent: "center", visibility: "hidden", display: "none" }}>
           Start a Project
         </p>
-        <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>PLANNING AN UPCOMING CORPORATE OR COMMERCIAL INTERIOR PROJECT?</h2>
+        <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Planning An Upcoming Coporate Or Commercial Interior Project?</h2>
         <p className="cta-sub" style={{ fontSize: "14px", marginBottom: "24px" }}>
           Let’s discuss how Adroit can deliver your project.
         </p>

@@ -14,13 +14,11 @@ export default function Hero() {
           <div className="hero-content">
             <p className="eyebrow hero-eyebrow">Corporate &amp; Commercial Interiors</p>
             <h1 className="hero-h1">
-              Designed to<br />
-              <em>Perform.</em><br />
-              Delivered with<br />
-              <em>Accountability.</em>
+              Designed to <em>Perform.</em><br />
+              Delivered with <em>Accountability.</em>
             </h1>
             <p className="lead">
-              Integrated Interior Design, Design &amp; Build and Turnkey Project Solutions —<br />
+              Integrated Interior Design, Design &amp; Build and Turnkey Project Solutions<br />
               from concept development to successful project handover.
             </p>
             <div className="hero-ctas">
@@ -46,14 +44,14 @@ export default function Hero() {
               </div>
             </div>
           </div>
-          
-          <div className="hero-image-wrapper">
-            <img 
-              src={heroPic.src} 
-              alt="Building Architecture" 
-              className="hero-building-img"
-            />
-          </div>
+        </div>
+
+        <div className="hero-image-wrapper">
+          <img
+            src={heroPic.src}
+            alt="Building Architecture"
+            className="hero-building-img"
+          />
         </div>
       </section>
       <LeadFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />

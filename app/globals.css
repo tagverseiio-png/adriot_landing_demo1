@@ -223,7 +223,7 @@ nav {
   padding: 150px 0 80px;
   position: relative;
   background-color: var(--charcoal);
-  background-image: 
+  background-image:
     linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
   background-size: 40px 40px;
@@ -237,30 +237,28 @@ nav {
   z-index: 2;
   text-align: left;
   padding: 0 32px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 60px;
+  width: 100%;
 }
 
 .hero-content {
-  flex: 1;
-  max-width: 560px;
+  max-width: 900px;
+  position: relative;
+  z-index: 10;
 }
 
 .hero-image-wrapper {
-  flex: 1.2;
-  display: flex;
-  justify-content: flex-end;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 45%;
+  z-index: 1;
 }
 
 .hero-building-img {
-  max-width: 100%;
-  height: auto;
-  max-height: 85vh;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  border-radius: 4px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
 }
 
 .hero-eyebrow {
@@ -276,12 +274,14 @@ nav {
   line-height: 1.1;
   letter-spacing: -0.02em;
   margin-bottom: 28px;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.9), 0 4px 40px rgba(0, 0, 0, 0.7);
 }
 
 .hero h1 em,
 .hero-h1 em {
   font-style: italic;
   color: var(--brass);
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 1), 0 0 60px rgba(0, 0, 0, 0.95), 2px 2px 0px rgba(0, 0, 0, 0.8);
 }
 
 .hero p.lead {
@@ -504,7 +504,7 @@ section {
 
 .svc-card .idx {
   font-family: var(--mono);
-  font-size: 12px;
+  font-size: 20px;
   color: var(--brass);
   margin-bottom: 20px;
   display: block;
@@ -653,6 +653,36 @@ section {
   aspect-ratio: 4/3;
   background: linear-gradient(135deg, var(--blueprint) 0%, var(--charcoal-soft) 100%);
   position: relative;
+  overflow: hidden;
+}
+
+.proj-thumb img {
+  transition: transform 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform;
+}
+
+.proj-card:hover .proj-thumb img {
+  transform: scale(1.12);
+}
+
+/* Subtle overlay on hover */
+.proj-thumb::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.45s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.proj-card:hover .proj-thumb::after {
+  background: rgba(0, 0, 0, 0.18);
+}
+
+/* Keep the tag above the overlay */
+.proj-thumb .tag {
+  z-index: 2;
 }
 
 .proj-thumb .tag {
@@ -666,6 +696,7 @@ section {
   color: var(--brass-soft);
   border: 1px solid rgba(244, 242, 237, 0.3);
   padding: 4px 9px;
+  z-index: 2;
 }
 
 .proj-info {
@@ -701,21 +732,21 @@ section {
 
 .testi-card {
   background: var(--paper);
-  padding: 34px 28px;
+  padding: 48px 36px;
 }
 
 .testi-card p.quote {
   font-family: var(--display);
   font-style: italic;
-  font-size: 18px;
-  line-height: 1.5;
-  margin-bottom: 22px;
+  font-size: 22px;
+  line-height: 1.6;
+  margin-bottom: 28px;
   color: #332f28;
 }
 
 .testi-card .who {
   font-family: var(--mono);
-  font-size: 12px;
+  font-size: 13.5px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--blueprint);
@@ -960,9 +991,10 @@ footer {
     padding: 120px 0 60px;
     background-position: center center;
   }
-  
+
   .hero .wrap {
-    padding-left: 18px; /* Override 2in padding on desktop */
+    padding-left: 18px;
+    /* Override 2in padding on desktop */
   }
 
   .hero h1,
