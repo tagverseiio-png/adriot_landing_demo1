@@ -4,6 +4,7 @@ export default function Process() {
       <div className="wrap">
         <div className="section-head">
           <p className="eyebrow">FROM CONCEPT TO COMPLETION.</p>
+          <h2 className="section-title">Our Process</h2>
         </div>
       </div>
       <div className="process-steps" style={{ gridTemplateColumns: "repeat(5, 1fr)" }}>

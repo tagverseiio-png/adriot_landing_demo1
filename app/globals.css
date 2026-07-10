@@ -733,14 +733,17 @@ section {
 .testi-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1px;
-  background: var(--line-dark);
   border: 1px solid var(--line-dark);
 }
 
 .testi-card {
   background: var(--paper);
   padding: 48px 36px;
+  border-right: 1px solid var(--line-dark);
+}
+
+.testi-card:last-child {
+  border-right: none;
 }
 
 .testi-card p.quote {
