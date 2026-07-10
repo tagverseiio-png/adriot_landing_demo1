@@ -10,7 +10,7 @@ export default function Portfolio() {
       <div className="wrap">
         <div className="section-head" style={{ maxWidth: "100%" }}>
           <p className="eyebrow">PROJECTS THAT DEMONSTRATE OUR CAPABILITIES.</p>
-          <h2 style={{ fontSize: "28px", lineHeight: 1.3, maxWidth: "100%" }}>Explore selected projects where Adroit combined design expertise, engineering coordination<br />and professional execution to deliver successful project outcomes.</h2>
+          <h2 style={{ lineHeight: 1.2, maxWidth: "100%" }}>Explore selected projects where Adroit combined design expertise, engineering <br /> coordination and professional execution to deliver successful project outcomes.</h2>
         </div>
         <div className="proj-grid">
           <div className="proj-card">
