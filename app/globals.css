@@ -218,16 +218,15 @@ nav {
   padding: 150px 0 80px;
   position: relative;
   background:
-    linear-gradient(180deg, rgba(23, 24, 26, 0) 0%, var(--charcoal) 90%),
-    repeating-linear-gradient(0deg, transparent, transparent 39px, var(--line) 40px),
-    repeating-linear-gradient(90deg, transparent, transparent 39px, var(--line) 40px);
+    linear-gradient(180deg, rgba(23, 24, 26, 0.6) 0%, rgba(23, 24, 26, 0.9) 100%),
+    url('/modern-house.jpg') center/cover no-repeat;
 }
 
 .hero .wrap {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 60px;
-  align-items: center;
+  max-width: 800px;
+  margin: 0;
+  position: relative;
+  z-index: 2;
 }
 
 .hero h1 {

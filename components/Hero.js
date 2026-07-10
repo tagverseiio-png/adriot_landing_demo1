@@ -41,22 +41,9 @@ export default function Hero() {
               </div>
             </div>
           </div>
-        <div className="blueprint-box">
-          <svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid meet">
-            <rect className="bp-line" x="30" y="30" width="340" height="440" />
-            <line className="bp-line" x1="30" y1="180" x2="230" y2="180" />
-            <line className="bp-line" x1="230" y1="30" x2="230" y2="180" />
-            <line className="bp-line" x1="30" y1="340" x2="370" y2="340" />
-            <line className="bp-line" x1="150" y1="180" x2="150" y2="340" />
-            <rect className="bp-fill" x="250" y="200" width="100" height="120" opacity="0" />
-            <rect className="bp-fill" x="50" y="360" width="150" height="90" opacity="0" />
-            <circle className="bp-line" cx="300" cy="90" r="34" />
-          </svg>
-          <span className="tag">Concept → Construction Drawing</span>
         </div>
-      </div>
-    </section>
-    <LeadFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+      </section>
+      <LeadFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </>
   );
 }
