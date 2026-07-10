@@ -20,9 +20,9 @@ export default function Navbar() {
     <>
       <header style={{ boxShadow: scrolled ? "0 8px 24px rgba(0,0,0,0.25)" : "none" }}>
         <nav>
-          <Link href="#top" className="logo">
+          <a href="https://www.adroitdesigns.in/" target="_blank" rel="noopener noreferrer" className="logo">
             Adroit <span>Design</span>
-          </Link>
+          </a>
           <div className="nav-links">
             <Link href="#about">Intro</Link>
             <Link href="#services">Services</Link>

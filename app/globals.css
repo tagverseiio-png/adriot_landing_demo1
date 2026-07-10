@@ -932,6 +932,10 @@ footer {
     padding: 120px 0 60px;
     background-position: center center;
   }
+  
+  .hero .wrap {
+    padding-left: 18px; /* Override 2in padding on desktop */
+  }
 
   .hero h1,
   .hero-h1 {
@@ -1055,6 +1059,19 @@ footer {
 
   .pstep h4 {
     font-size: 15px;
+  }
+
+  /* Floating Contact */
+  .floating-contact {
+    right: 20px !important;
+    bottom: 20px !important;
+    gap: 12px !important;
+  }
+
+  .floating-contact a,
+  .floating-contact button {
+    width: 50px !important;
+    height: 50px !important;
   }
 }
 

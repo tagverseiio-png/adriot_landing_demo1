@@ -8,7 +8,15 @@ export default function About() {
         </p>
         <div className="client-logos" style={{ display: "flex", gap: "30px", justifyContent: "center", flexWrap: "wrap", opacity: 0.6 }}>
           {/* [CLIENT LOGOS] */}
-          <div>[CLIENT LOGOS]</div>
+          <img 
+            src="/adroit-logo.png" 
+            alt="Adroit Logo" 
+            style={{ 
+              maxHeight: "150px", 
+              filter: "invert(1) grayscale(1) contrast(1.5)", 
+              mixBlendMode: "multiply"
+            }} 
+          />
         </div>
       </div>
     </section>
