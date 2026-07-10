@@ -1,10 +1,13 @@
 "use client";
+import { useRouter } from "next/navigation";
 
 export default function LeadForm({ onSuccess }) {
+  const router = useRouter();
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Logic to handle form submission
-    if (onSuccess) onSuccess();
+    // Navigate to thank-you page
+    router.push("/thank-you");
   };
 
   return (
