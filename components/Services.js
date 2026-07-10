@@ -47,22 +47,8 @@ export default function Services() {
           {/* CTA Button */}
           <div style={{ textAlign: "center", marginTop: "48px" }}>
             <button
+              className="btn solid"
               onClick={() => setIsModalOpen(true)}
-              style={{
-                background: "#b9905a",
-                color: "#ffffff",
-                border: "none",
-                padding: "18px 48px",
-                fontSize: "13px",
-                fontFamily: "var(--mono)",
-                letterSpacing: "0.12em",
-                textTransform: "uppercase",
-                cursor: "pointer",
-                borderRadius: "2px",
-                transition: "background 0.25s ease",
-              }}
-              onMouseEnter={e => e.target.style.background = "#a07840"}
-              onMouseLeave={e => e.target.style.background = "#b9905a"}
             >
               Request a Free Site Visit
             </button>

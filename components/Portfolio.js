@@ -78,22 +78,8 @@ export default function Portfolio() {
         {/* CTA Button */}
         <div style={{ textAlign: "center", marginTop: "48px" }}>
           <button
+            className="btn solid"
             onClick={() => setIsModalOpen(true)}
-            style={{
-              background: "#ffffff",
-              color: "#000000",
-              border: "none",
-              padding: "16px 48px",
-              fontSize: "13px",
-              fontFamily: "var(--mono)",
-              letterSpacing: "0.12em",
-              textTransform: "uppercase",
-              cursor: "pointer",
-              borderRadius: "2px",
-              transition: "background 0.25s ease",
-            }}
-            onMouseEnter={e => e.target.style.background = "#f0f0f0"}
-            onMouseLeave={e => e.target.style.background = "#ffffff"}
           >
             See Full Portfolio
           </button>

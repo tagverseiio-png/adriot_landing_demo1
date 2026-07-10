@@ -57,30 +57,8 @@ export default function FAQ() {
           {/* CTA Button */}
           <div style={{ textAlign: "center", marginTop: "48px" }}>
             <button
+              className="btn solid"
               onClick={() => setIsModalOpen(true)}
-              style={{
-                background: "transparent",
-                color: "var(--ink)",
-                border: "1px solid var(--ink)",
-                padding: "16px 48px",
-                fontSize: "13px",
-                fontFamily: "var(--mono)",
-                letterSpacing: "0.12em",
-                textTransform: "uppercase",
-                cursor: "pointer",
-                borderRadius: "2px",
-                transition: "all 0.25s ease",
-              }}
-              onMouseEnter={e => {
-                e.target.style.background = "var(--brass)";
-                e.target.style.borderColor = "var(--brass)";
-                e.target.style.color = "var(--charcoal)";
-              }}
-              onMouseLeave={e => {
-                e.target.style.background = "transparent";
-                e.target.style.borderColor = "var(--ink)";
-                e.target.style.color = "var(--ink)";
-              }}
             >
               Ask Us a Question
             </button>
