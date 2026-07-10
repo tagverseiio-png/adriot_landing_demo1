@@ -13,7 +13,7 @@ export default function Services() {
             <p className="eyebrow">ONE PARTNER. COMPLETE PROJECT DELIVERY.</p>
             <h2>Corporate &amp; Commercial Interior Services</h2>
           </div>
-          <div className="svc-grid" style={{ gridTemplateColumns: "repeat(2, 1fr)" }}>
+          <div className="svc-grid">
             <div className="svc-card">
               <span className="idx">01</span>
               <h3>Corporate &amp; Commercial Interior Design</h3>
