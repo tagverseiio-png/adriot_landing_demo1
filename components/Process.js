@@ -1,10 +1,4 @@
-"use client";
-import { useState } from "react";
-import LeadFormModal from "./LeadFormModal";
-
 export default function Process() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
   const steps = [
     {
       no: "01",
@@ -39,44 +33,34 @@ export default function Process() {
   ];
 
   return (
-    <>
-      <section className="process" id="process">
-        <div className="wrap">
-          <div className="process-header">
-            <p className="eyebrow">FROM CONCEPT TO COMPLETION.</p>
-            <h2 className="section-title">Our Process</h2>
-            <p className="process-subtitle">
-              A disciplined five-phase methodology — refined across hundreds of projects — ensures every build is delivered with precision, on time, and on budget.
-            </p>
-          </div>
+    <section className="process" id="process">
 
-          {/* Timeline connector line */}
-          <div className="process-timeline">
-            <div className="timeline-line"></div>
-
-            {steps.map((step, i) => (
-              <div className="pstep" key={i}>
-                <div className="pstep-dot"></div>
-                <div className="pstep-inner">
-                  <div className="step-no">{step.no}</div>
-                  <h4>{step.title}</h4>
-                  <p className="step-desc">{step.desc}</p>
-                  <p className="step-detail">{step.detail}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* CTA Button */}
-          <div style={{ textAlign: "center", marginTop: "56px" }}>
-            <button className="btn solid" onClick={() => setIsModalOpen(true)}>
-              Discuss Your Project
-            </button>
-          </div>
+      <div className="wrap">
+        <div className="process-header">
+          <p className="eyebrow">FROM CONCEPT TO COMPLETION.</p>
+          <h2 className="section-title">Our Process</h2>
+          <p className="process-subtitle">
+            A disciplined five-phase methodology — refined across hundreds of projects — ensures every build is delivered with precision, on time, and on budget.
+          </p>
         </div>
-      </section>
 
-      <LeadFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
-    </>
+        {/* Timeline connector line */}
+        <div className="process-timeline">
+          <div className="timeline-line"></div>
+
+          {steps.map((step, i) => (
+            <div className="pstep" key={i}>
+              <div className="pstep-dot"></div>
+              <div className="pstep-inner">
+                <div className="step-no">{step.no}</div>
+                <h4>{step.title}</h4>
+                <p className="step-desc">{step.desc}</p>
+                <p className="step-detail">{step.detail}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }

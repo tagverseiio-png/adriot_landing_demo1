@@ -958,6 +958,16 @@ section {
   text-align: center;
 }
 
+/* Constrain the shared qe-form when used inside the CTA section */
+.cta .qe-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cta .qe-submit {
+  align-self: center;
+}
+
 .cta h2 {
   font-size: clamp(28px, 4vw, 44px);
   margin-bottom: 20px;
@@ -1496,13 +1506,13 @@ footer {
 .qe-submit {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   background: var(--brass);
   color: #050505;
   border: none;
-  padding: 18px 40px;
+  padding: 13px 28px;
   font-family: var(--mono);
-  font-size: 13px;
+  font-size: 12px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   cursor: pointer;
