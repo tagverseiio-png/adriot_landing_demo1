@@ -432,6 +432,7 @@ section {
 .about {
   background: var(--paper);
   color: var(--charcoal);
+  padding: 48px 0;
 }
 
 .about .eyebrow {
