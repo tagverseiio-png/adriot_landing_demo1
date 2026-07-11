@@ -44,14 +44,13 @@ export default function Hero() {
               </div>
             </div>
           </div>
-        </div>
-
-        <div className="hero-image-wrapper">
-          <img
-            src={heroPic.src}
-            alt="Building Architecture"
-            className="hero-building-img"
-          />
+          <div className="hero-image-wrapper">
+            <img
+              src={heroPic.src}
+              alt="Building Architecture"
+              className="hero-building-img"
+            />
+          </div>
         </div>
       </section>
       <LeadFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
