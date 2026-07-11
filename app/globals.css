@@ -1298,9 +1298,19 @@ footer {
     font-size: clamp(22px, 6vw, 30px);
   }
 
-  /* CTA Form */
-  .cta-form {
-    grid-template-columns: 1fr;
+  /* CTA / Contact Form — qe-form inside .cta */
+  .cta .qe-form {
+    padding: 0 4px;
+  }
+
+  .cta .qe-submit {
+    align-self: stretch;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .cta h2 {
+    font-size: clamp(20px, 6vw, 28px);
   }
 
   /* Footer */
