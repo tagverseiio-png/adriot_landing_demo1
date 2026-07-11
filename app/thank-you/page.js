@@ -88,6 +88,8 @@ export default function ThankYouPage() {
       <FloatingContact />
 
       <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat:wght@400;500;600;700&display=swap');
+
         .ty-root {
           position: relative;
           min-height: 100vh;
@@ -95,7 +97,7 @@ export default function ThankYouPage() {
           display: flex;
           align-items: center;
           overflow: hidden;
-          font-family: 'Inter', sans-serif;
+          font-family: 'Montserrat', sans-serif;
           -webkit-font-smoothing: antialiased;
         }
 
@@ -149,7 +151,7 @@ export default function ThankYouPage() {
           user-select: none;
           z-index: 0;
           line-height: 1;
-          font-family: 'Inter', sans-serif;
+          font-family: 'Montserrat', sans-serif;
         }
 
         .ty-inner {
@@ -171,7 +173,7 @@ export default function ThankYouPage() {
           color: rgba(196,155,73,0.65);
           text-transform: uppercase;
           margin-bottom: 40px;
-          font-family: 'IBM Plex Mono', monospace;
+          font-family: 'Montserrat', monospace;
         }
 
         .ty-badge {
@@ -195,9 +197,9 @@ export default function ThankYouPage() {
         }
 
         .ty-heading {
-          font-family: 'Inter', sans-serif;
-          font-size: clamp(40px, 6vw, 72px);
-          font-weight: 900;
+          font-family: 'Michroma', sans-serif;
+          font-size: clamp(32px, 4.5vw, 58px);
+          font-weight: 400;
           color: #ffffff;
           line-height: 0.88;
           letter-spacing: -3px;
@@ -238,7 +240,7 @@ export default function ThankYouPage() {
           transition: transform 0.22s ease, box-shadow 0.22s ease,
                       background 0.22s ease, color 0.22s ease, border-color 0.22s ease;
           white-space: nowrap;
-          font-family: 'Inter', sans-serif;
+          font-family: 'Montserrat', sans-serif;
         }
 
         .ty-btn--gold {
@@ -294,7 +296,7 @@ export default function ThankYouPage() {
           color: #fff;
           line-height: 1;
           letter-spacing: -0.5px;
-          font-family: 'Inter', sans-serif;
+          font-family: 'Michroma', sans-serif;
         }
         .ty-stat-num.ty-gold { color: #c49b49; }
 
@@ -304,7 +306,7 @@ export default function ThankYouPage() {
           letter-spacing: 2.5px;
           color: rgba(255,255,255,0.35);
           text-transform: uppercase;
-          font-family: 'IBM Plex Mono', monospace;
+          font-family: 'Montserrat', sans-serif;
         }
 
         .ty-stat-sep {

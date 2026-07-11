@@ -23,14 +23,7 @@ export default function Navbar() {
           <a href="https://www.adroitdesigns.in/" target="_blank" rel="noopener noreferrer" className="logo">
             Adroit <span>Design</span>
           </a>
-          <div className="nav-links">
-            <Link href="#about">Intro</Link>
-            <Link href="#services">Services</Link>
-            <Link href="#projects">Projects</Link>
-            <Link href="#why">Why Adroit</Link>
-            <Link href="#process">Process</Link>
-            <Link href="#faq">FAQ</Link>
-          </div>
+
           <div className="nav-cta">
             <button className="btn solid" onClick={() => setIsModalOpen(true)}>
               Get a Quote
