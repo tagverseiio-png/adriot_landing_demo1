@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import LeadFormModal from "./LeadFormModal";
+import AdroitIcon from "./AdroitIcon";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +22,7 @@ export default function Navbar() {
       <header style={{ boxShadow: scrolled ? "0 8px 24px rgba(0,0,0,0.25)" : "none" }}>
         <nav>
           <a href="https://www.adroitdesigns.in/" target="_blank" rel="noopener noreferrer" className="logo" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-            <img src="/adroit-logo-transparent.png" alt="Adroit Logo" style={{ height: '48px', width: 'auto' }} />
+            <AdroitIcon width={48} height={48} />
             <span style={{ textTransform: 'uppercase', color: 'white', letterSpacing: '2px', fontWeight: '500' }}>ADROIT DESIGN</span>
           </a>
 
