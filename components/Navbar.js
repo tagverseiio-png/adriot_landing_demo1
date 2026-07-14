@@ -20,8 +20,9 @@ export default function Navbar() {
     <>
       <header style={{ boxShadow: scrolled ? "0 8px 24px rgba(0,0,0,0.25)" : "none" }}>
         <nav>
-          <a href="https://www.adroitdesigns.in/" target="_blank" rel="noopener noreferrer" className="logo">
-            Adroit <span>Design</span>
+          <a href="https://www.adroitdesigns.in/" target="_blank" rel="noopener noreferrer" className="logo" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <img src="/adroit-logo-transparent.png" alt="Adroit Logo" style={{ height: '48px', width: 'auto' }} />
+            <span style={{ textTransform: 'uppercase', color: 'white', letterSpacing: '2px', fontWeight: '500' }}>ADROIT DESIGN</span>
           </a>
 
           <div className="nav-cta">
@@ -44,8 +45,8 @@ export default function Navbar() {
           <Link href="#why" onClick={() => setIsOpen(false)}>Why Adroit</Link>
           <Link href="#process" onClick={() => setIsOpen(false)}>Process</Link>
           <Link href="#faq" onClick={() => setIsOpen(false)}>FAQ</Link>
-          <button 
-            className="btn solid" 
+          <button
+            className="btn solid"
             style={{ justifyContent: "center" }}
             onClick={() => {
               setIsOpen(false);
