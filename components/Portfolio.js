@@ -77,12 +77,13 @@ export default function Portfolio() {
 
         {/* CTA Button */}
         <div style={{ textAlign: "center", marginTop: "48px" }}>
-          <button
+          <a
+            href="https://www.adroitdesigns.in/projects"
             className="btn solid"
-            onClick={() => setIsModalOpen(true)}
+            style={{ textDecoration: 'none' }}
           >
             See Full Portfolio
-          </button>
+          </a>
         </div>
       </div>
       <LeadFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
