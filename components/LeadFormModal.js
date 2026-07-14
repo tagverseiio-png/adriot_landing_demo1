@@ -28,7 +28,7 @@ export default function LeadFormModal({ isOpen, onClose }) {
               <input type="text" placeholder="Full Name" required />
             </div>
             <div className="qe-field">
-              <input type="email" placeholder="Email Address" required />
+              <input type="email" placeholder="Official Mail ID" required />
             </div>
           </div>
 
@@ -49,7 +49,17 @@ export default function LeadFormModal({ isOpen, onClose }) {
             </div>
           </div>
 
-          {/* Row 3 — full width */}
+          {/* Row 3 */}
+          <div className="qe-row">
+            <div className="qe-field">
+              <input type="text" placeholder="Location" required />
+            </div>
+            <div className="qe-field">
+              <input type="text" placeholder="Area (sq. ft.)" />
+            </div>
+          </div>
+
+          {/* Row 4 — full width */}
           <div className="qe-field qe-field--full">
             <textarea placeholder="Message / Specifications" rows={4} />
           </div>
