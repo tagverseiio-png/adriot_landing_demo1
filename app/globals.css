@@ -37,9 +37,15 @@ body {
   background: var(--charcoal);
   color: var(--ink);
   font-family: var(--body);
+  font-size: 16px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--display);
+  font-weight: 400;
 }
 
 img {
