@@ -50,7 +50,7 @@ export default function Services() {
               className="btn solid"
               onClick={() => setIsModalOpen(true)}
             >
-              Request a Free Site Visit
+              Request a Professional Consultation
             </button>
           </div>
         </div>

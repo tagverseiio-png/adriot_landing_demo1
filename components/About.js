@@ -37,7 +37,7 @@ export default function About() {
               cursor: "pointer",
               fontFamily: "inherit"
             }}>
-              GET A FREE VISIT
+              GET A PROFESSIONAL CONSULTATION
             </button>
           </div>
         </div>
