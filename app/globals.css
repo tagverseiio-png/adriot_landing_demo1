@@ -430,7 +430,7 @@ section {
   letter-spacing: 0em;
 }
 
-.section-head p {
+.section-head p:not(.eyebrow) {
   color: var(--ink-dim);
   margin-top: 18px;
   font-size: 16px;
@@ -587,12 +587,12 @@ section {
 }
 
 .process-header .eyebrow {
-  color: var(--brass-soft);
+  color: var(--brass);
   margin-bottom: 14px;
 }
 
 .process-header .eyebrow::before {
-  background: var(--brass-soft);
+  background: var(--brass);
 }
 
 .process-header .section-title {
