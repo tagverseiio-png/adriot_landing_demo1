@@ -104,7 +104,7 @@ h4 {
   padding: 15px 28px;
   border: 1px solid var(--brass);
   color: var(--ink);
-  border-radius: 2px;
+  border-radius: 50px;
   transition: all 0.25s ease;
   cursor: pointer;
   background: transparent;
