@@ -2,22 +2,32 @@
 
 :root {
   /* Strict 4-color brand palette */
-  --charcoal:      #050505;   /* primary dark bg */
-  --charcoal-soft: #111111;   /* dark cards / lifted surfaces */
-  --paper:         #f4f4f4;   /* light section bg */
-  --paper-dim:     #e8e8e8;   /* subtle borders on light bg */
-  --ink:           #ffffff;   /* text on dark */
-  --ink-dim:       rgba(255,255,255,0.50); /* muted text on dark */
-  --brass:         #c5a059;   /* gold accent */
-  --brass-soft:    #d4b472;   /* lighter gold for hover states */
+  --charcoal: #050505;
+  /* primary dark bg */
+  --charcoal-soft: #111111;
+  /* dark cards / lifted surfaces */
+  --paper: #f4f4f4;
+  /* light section bg */
+  --paper-dim: #e8e8e8;
+  /* subtle borders on light bg */
+  --ink: #ffffff;
+  /* text on dark */
+  --ink-dim: rgba(255, 255, 255, 0.50);
+  /* muted text on dark */
+  --brass: #c5a059;
+  /* gold accent */
+  --brass-soft: #d4b472;
+  /* lighter gold for hover states */
   /* blueprint aliases → map to dark palette */
-  --blueprint:     #050505;
+  --blueprint: #050505;
   --blueprint-soft: #c5a059;
-  --line:          rgba(255,255,255,0.10); /* subtle divider on dark */
-  --line-dark:     rgba(5,5,5,0.12);      /* subtle divider on light */
+  --line: rgba(255, 255, 255, 0.10);
+  /* subtle divider on dark */
+  --line-dark: rgba(5, 5, 5, 0.12);
+  /* subtle divider on light */
   --display: 'Michroma', sans-serif;
-  --body:    'Montserrat', sans-serif;
-  --mono:    'Montserrat', sans-serif;
+  --body: 'Montserrat', sans-serif;
+  --mono: 'Montserrat', sans-serif;
   --maxw: 1180px;
 }
 
@@ -43,7 +53,12 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--display);
   font-weight: 400;
 }
@@ -508,7 +523,7 @@ section {
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: rgba(5,5,5,0.55);
+  color: rgba(5, 5, 5, 0.55);
   margin-top: 6px;
 }
 
@@ -1289,18 +1304,6 @@ footer {
   .testi-grid,
   .about-figures {
     grid-template-columns: 1fr;
-  }
-
-  .svc-card {
-    padding: 24px 20px;
-  }
-
-  .svc-card h3 {
-    font-size: 20px;
-  }
-
-  .svc-card p {
-    font-size: 15px;
   }
 
   .process-timeline {
