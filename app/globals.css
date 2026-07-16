@@ -341,6 +341,18 @@ nav {
 
 .hero-stats div {
   font-family: var(--mono);
+  cursor: default;
+  user-select: none;
+}
+
+.hero-stats div:hover .num {
+  transform: scale(1.15);
+  color: var(--brass-soft);
+}
+
+.hero-stats div:hover .lbl {
+  transform: scale(0.92);
+  opacity: 0.6;
 }
 
 .hero-stats .num {
@@ -348,6 +360,8 @@ nav {
   font-size: 28px;
   color: var(--brass);
   display: block;
+  transition: transform 0.3s ease, color 0.3s ease;
+  transform-origin: left center;
 }
 
 .hero-stats .lbl {
@@ -355,6 +369,9 @@ nav {
   color: var(--ink-dim);
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  display: block;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform-origin: left center;
 }
 
 .blueprint-box {
