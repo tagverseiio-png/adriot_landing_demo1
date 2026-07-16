@@ -76,7 +76,7 @@ h4 {
 
 .eyebrow {
   font-family: var(--mono);
-  font-size: 12px;
+  font-size: 13px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--brass);
@@ -88,7 +88,7 @@ h4 {
 
 .eyebrow::before {
   content: '';
-  width: 22px;
+  width: 26px;
   height: 1px;
   background: var(--brass);
 }
@@ -444,11 +444,21 @@ section {
 }
 
 .about .eyebrow {
-  color: var(--blueprint);
+  color: var(--charcoal);
+  justify-content: center;
 }
 
 .about .eyebrow::before {
-  background: var(--blueprint);
+  background: var(--charcoal);
+}
+
+/* Testimonials is also on paper (light) bg — override gold to charcoal */
+.testimonials .eyebrow {
+  color: var(--charcoal);
+}
+
+.testimonials .eyebrow::before {
+  background: var(--charcoal);
 }
 
 .about-grid {
