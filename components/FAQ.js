@@ -35,7 +35,7 @@ export default function FAQ() {
         <div className="wrap">
           <div className="section-head">
             <p className="eyebrow" style={{ visibility: "hidden" }}>FAQ</p>
-            <h2>Frequently Asked Questions</h2>
+            <h2 style={{ fontSize: "25px", fontWeight: "600" }}>Frequently Asked Questions</h2>
           </div>
           <div className="faq-list">
             {faqs.map((faq, idx) => (
