@@ -299,7 +299,7 @@ nav {
 }
 
 .hero p.lead {
-  font-size: 15px;
+  font-size: 17px;
   line-height: 1.7;
   color: var(--blueprint-soft);
   max-width: 580px;
@@ -330,13 +330,13 @@ nav {
 
 .hero-stats .num {
   font-family: var(--display);
-  font-size: 22px;
+  font-size: 28px;
   color: var(--brass);
   display: block;
 }
 
 .hero-stats .lbl {
-  font-size: 11px;
+  font-size: 17px;
   color: var(--ink-dim);
   letter-spacing: 0.05em;
   text-transform: uppercase;
