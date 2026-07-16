@@ -520,19 +520,21 @@ section {
 .svc-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1px;
-  background: var(--line);
-  border: 1px solid var(--line);
+  gap: 24px;
 }
 
 .svc-card {
-  background: var(--charcoal);
+  background: var(--charcoal-soft);
+  border: 1px solid var(--line);
+  border-radius: 8px;
   padding: 38px 32px;
-  transition: background 0.25s;
+  transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
 }
 
 .svc-card:hover {
-  background: var(--charcoal-soft);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  border-color: var(--brass-soft);
 }
 
 .svc-card .idx {
@@ -1542,7 +1544,7 @@ footer {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   cursor: pointer;
-  border-radius: 2px;
+  border-radius: 50px;
   font-weight: 600;
   transition: background 0.25s;
   align-self: flex-start;
