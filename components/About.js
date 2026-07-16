@@ -16,11 +16,11 @@ export default function About() {
           </p>
           <div className="client-logos" style={{ display: "flex", gap: "30px", justifyContent: "center", flexWrap: "wrap", marginBottom: "48px" }}>
             {/* Replaced with precise SVG recreation of Adroit logo */}
-            <AdroitLogo width="420" height="158" textColor="#050505" />
+            <AdroitLogo width="280" height="105" textColor="#050505" />
           </div>
 
           <div style={{ marginTop: "20px" }}>
-            <button onClick={() => setIsModalOpen(true)} className="btn solid on-paper" style={{ fontSize: "14px", padding: "18px 40px", letterSpacing: "0.1em" }}>
+            <button onClick={() => setIsModalOpen(true)} className="btn solid on-paper" style={{ fontSize: "13px", padding: "12px 28px", letterSpacing: "0.1em" }}>
               Get a Professional Consultation
             </button>
           </div>
