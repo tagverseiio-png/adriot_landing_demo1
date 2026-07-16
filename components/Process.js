@@ -44,7 +44,7 @@ export default function Process() {
         <div className="wrap">
           <div className="process-header">
             <p className="eyebrow">FROM CONCEPT TO COMPLETION.</p>
-            <h2 className="section-title">Our Process</h2>
+            <h2 className="section-title">Our Work Process</h2>
             <p className="process-subtitle">
               A disciplined five-phase methodology — refined across hundreds of projects — ensures every build is delivered with precision, on time, and on budget.
             </p>

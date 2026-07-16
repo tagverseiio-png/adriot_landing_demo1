@@ -12,7 +12,7 @@ export default function Hero() {
       <section className="hero" id="top">
         <div className="wrap hero-wrap">
           <div className="hero-content">
-            <p className="eyebrow hero-eyebrow">Corporate &amp; Commercial Interiors</p>
+            <p className="eyebrow hero-eyebrow">Corporate &amp; Commercial Turkey interior fitout services </p>
             <h1 className="hero-h1">
               Designed to <em>Perform.</em><br />
               Delivered with <em>Accountability.</em>
