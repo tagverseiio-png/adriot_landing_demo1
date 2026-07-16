@@ -20,7 +20,7 @@ export default function About() {
           </div>
 
           <div style={{ marginTop: "20px" }}>
-            <button onClick={() => setIsModalOpen(true)} className="btn solid on-paper" style={{ fontSize: "13px", padding: "12px 28px", letterSpacing: "0.1em" }}>
+            <button onClick={() => setIsModalOpen(true)} className="btn solid" style={{ fontSize: "13px", padding: "12px 28px", letterSpacing: "0.1em" }}>
               Get a Professional Consultation
             </button>
           </div>
