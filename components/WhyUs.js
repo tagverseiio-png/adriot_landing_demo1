@@ -12,7 +12,7 @@ export default function WhyUs() {
         <div className="wrap why-grid">
           <div>
             <p className="eyebrow">Why Adroit</p>
-            <h2 className="section-h2" style={{ marginBottom: "34px" }}>
+            <h2 className="section-h2" style={{ marginBottom: "34px", fontSize: "25px", fontWeight: "600" }}>
               Built For Businesses Where Quality, Cost And Timelines Matter.
             </h2>
             <div className="why-list">

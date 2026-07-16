@@ -11,7 +11,7 @@ export default function Testimonials() {
         <div className="wrap">
           <div className="section-head">
             <p className="eyebrow">Client Feedback</p>
-            <h2>What our clients say about working with Adroit Design</h2>
+            <h2 style={{ fontSize: "25px", fontWeight: "600" }}>What our clients say about working with Adroit Design</h2>
           </div>
 
           <div className="testi-grid">
