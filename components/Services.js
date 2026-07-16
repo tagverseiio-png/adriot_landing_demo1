@@ -11,7 +11,7 @@ export default function Services() {
         <div className="wrap">
           <div className="section-head">
             <p className="eyebrow">ONE PARTNER. COMPLETE PROJECT DELIVERY.</p>
-            <h2>Corporate &amp; Commercial Interior Services</h2>
+            <h2 style={{ fontSize: "25px", fontWeight: "600" }}>Corporate &amp; Commercial Interior Services</h2>
           </div>
           <div className="svc-grid">
             <div className="svc-card">
