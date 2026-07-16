@@ -11,7 +11,7 @@ export default function About() {
       <section className="about" id="trusted" style={{ textAlign: "center", padding: "80px 0" }}>
         <div className="wrap">
           <p className="eyebrow">Trusted By Leading Businesses</p>
-          <p style={{ maxWidth: "680px", margin: "0 auto 48px", fontFamily: "var(--body)", fontSize: "22px", color: "#050505", fontWeight: "500", lineHeight: "1.75" }}>
+          <p style={{ maxWidth: "680px", margin: "0 auto 48px", fontFamily: "var(--display)", fontSize: "22px", color: "#050505", fontWeight: "500", lineHeight: "1.75" }}>
             Adroit partners with Corporates, Institutions and Businesses to design and deliver high-quality workplaces and commercial environments.
           </p>
           <div className="client-logos" style={{ display: "flex", gap: "30px", justifyContent: "center", flexWrap: "wrap", marginBottom: "48px" }}>

@@ -9,9 +9,9 @@ export default function Services() {
     <>
       <section className="services" id="services">
         <div className="wrap">
-          <div className="section-head">
+          <div className="section-head" style={{ maxWidth: "100%" }}>
             <p className="eyebrow">ONE PARTNER. COMPLETE PROJECT DELIVERY.</p>
-            <h2 style={{ fontSize: "25px", fontWeight: "600" }}>Corporate &amp; Commercial Interior Services</h2>
+            <h2 style={{ fontSize: "25px", fontWeight: "600" }}>Corporate &amp; Commercial Turkey interior fitout services</h2>
           </div>
           <div className="svc-grid">
             <div className="svc-card">
