@@ -1544,7 +1544,7 @@ footer {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   cursor: pointer;
-  border-radius: 2px;
+  border-radius: 50px;
   font-weight: 600;
   transition: background 0.25s;
   align-self: flex-start;
